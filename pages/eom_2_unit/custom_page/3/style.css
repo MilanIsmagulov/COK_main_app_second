@@ -1,0 +1,289 @@
+:root{
+    --main-blue-color-custom: #0070c0;
+    --main-sea-color-custom: #3cba94;
+    --main-box-shadow-custom: 1px 3px 15px 5px rgba(0,0,0,0.35);
+    --main-height: 180px;
+    --clip-path-border-radius: 15px;
+    --pl-pr-htc-custom: clamp(15px, 3vw, 60px);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(16px, 2vw, 25px) !important;
+}
+html{
+    height: 100% !important;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: var(--pl-pr-htc-custom);
+    padding-right: var(--pl-pr-htc-custom); */
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #356184;
+    background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+h3{
+    margin-bottom: 15px;
+}
+p{
+    text-align: justify;
+    text-indent: 4%;
+    margin-bottom: 15px;
+}
+ul li{
+    margin-bottom: 20px;
+}
+dialog {
+    position: absolute;
+    text-align: end;
+    left: 25%;
+    top: 50%;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px; /* Закругленные углы */
+    padding: 20px; /* Отступы внутри окна */
+    border: none; /* Убираем стандартные границы */
+    box-shadow: var(--main-box-shadow-custom); /* Тень для глубины */
+    height: 80%;
+    max-height: 1000px;
+}
+
+dialog::-webkit-scrollbar {
+    width: 0px;
+}
+
+dialog button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    border: 0;
+    background-color: #99999960;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+dialog::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+}
+
+dialog::-webkit-scrollbar-thumb {
+    background-color: #356184;
+    background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+
+dialog p{
+    width: 95% !important;
+    height: 95%;
+    text-align: center;
+}
+
+dialog p img{
+    height: 100%;
+    width: 100% !important;
+    max-width: 700px;
+    object-fit: contain;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.0); /* Полупрозрачный фон для модального окна */
+}
+
+.main_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+    height: 100% !important;
+    width: 100% !important;
+}
+table.iksweb{
+	width: 100%;
+	border-collapse:collapse;
+	border-spacing:0;
+	height: auto;
+    font-size: 25px;
+}
+table.iksweb,table.iksweb td, table.iksweb th {
+	border: 1px solid #44546a;
+}
+table.iksweb td,table.iksweb th {
+	padding: 3px;
+	width: 30px;
+	height: 35px;
+}
+table.iksweb th {
+	background: #347c99; 
+	color: #fff; 
+	font-weight: normal;
+}
+.blue_paragraph{
+    color: var(--main-blue-color-custom);
+    font-weight: 800;
+}
+.table_first_header_custom{
+    text-align: start;
+    background-color: #d6dce5;
+    font-weight: 900;
+    color: #44546a;
+    font-size: 30px;
+}
+.table_header_custom{
+    text-align: center;
+    background-color: #44546a;
+    font-weight: 700;
+    color: #fff;
+}
+.text_with_image_custom {
+    display: flex; /* Flexbox для выравнивания по горизонтали */
+    padding-top: 25px;
+    gap: 20px; /* Отступ между текстом и изображением */
+    align-items: stretch; /* Растягивает оба блока по высоте */
+}
+
+.text_left_custom {
+    width: 70%; /* Ширина текстового блока */
+}
+
+.text_image_right_custom {
+    position: relative;
+    width: 30%; /* Ширина изображения */
+    padding: 25px;
+    margin: 5px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--main-box-shadow-custom);
+    display: flex;
+    align-items: center; /* Центрирует изображение по вертикали */
+    justify-content: center; /* Центрирует изображение по горизонтали */
+    flex-grow: 1; /* Растягивает блок по высоте */
+}
+
+.zoom_button {
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 15px;
+    border: 0;
+    background-color: #0070c085;
+}
+
+.zoom_button img{
+    margin: 10px;
+    max-width: 35px !important;
+    max-height: 35px !important;
+    min-height: 35px !important;
+    min-width: 35px !important;
+}
+
+.close_button_custom img{
+    margin: 10px;
+    max-width: 35px !important;
+    max-height: 35px !important;
+    min-height: 35px !important;
+    min-width: 35px !important;
+}
+
+.w100{
+    margin-top: 0;
+    width: 100% !important;
+}
+
+.w100 p{
+    margin-bottom: 0;
+}
+
+.w100 h3{
+    margin-top: 10px;
+}
+
+
+.text_image_right_custom img {
+    width: inherit;
+    height: auto;
+    min-height: 350px;
+    min-width: 300px;
+}
+
+.second_img_custom img{
+    width: inherit;
+    height: inherit;
+    min-height: 320px;
+    min-width: 350px;
+}
+
+@media (max-width: 1180px) {
+    .text_image_right_custom img {
+        min-height: 320px;
+        min-width: 280px;
+    }
+    .text_with_image_custom{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text_left_custom {
+        width: 100%; /* Ширина текстового блока */
+    }
+    
+    .text_image_right_custom {
+        width: 60%; /* Ширина изображения */
+    }
+    dialog {
+        width: 70%;
+        left: 13%;
+        top: 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    :root{
+        --pl-pr-htc-custom: 10px;
+    }
+    .text_image_right_custom {
+        width: 80%; /* Ширина изображения */
+    }
+    dialog {
+        width: 86%;
+        left: 4%;
+        top: 5%;
+    }
+}
+
+@media (max-width: 580px) {
+    dialog {
+        width: 96%;
+        left: 0%;
+        top: 5%;
+    }
+}

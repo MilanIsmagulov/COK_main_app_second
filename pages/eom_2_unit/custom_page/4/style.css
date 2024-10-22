@@ -1,0 +1,162 @@
+:root{
+    --main-blue-color-custom: #0070c0;
+    --main-sea-color-custom: #3cba94;
+    --main-box-shadow-custom: 1px 3px 15px 5px rgba(0,0,0,0.35);
+    --main-height: 180px;
+    --clip-path-border-radius: 15px;
+    --pl-pr-htc-custom: 60px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(16px, 2vw, 25px);
+}
+html{
+    height: 100% !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    margin-top: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #356184;
+    background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+ul li{
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.main_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100% !important;
+}
+
+.header_wrapper_custom{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.blue_header_custom {
+    text-align: start;
+    color: var(--main-blue-color-custom);
+}
+
+.second_custom{
+    width: 100%;
+}
+
+.infographic_custom{
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.infographic_wrapper_custom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    min-width: 335px;
+    width: 33%;
+}
+
+.infographic_content_wrapper_custom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 100%;
+    padding: 25px;
+    padding-top: 55px;
+    margin: 5px;
+    border-radius: 4vw;
+    box-shadow: var(--main-box-shadow-custom);
+}
+
+.infographic_header_custom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -45px;
+    font-weight: 900;
+    font-size: clamp(35px, 10vw, 50px);
+    width: 50%;
+    min-width: 280px;
+    min-height: 100px;
+    color: #fff;
+    background-image: url('./primitives/pr_1.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.second{
+    background-image: url('./primitives/pr_2.png');
+}
+
+.third{
+    background-image: url('./primitives/pr_3.png');
+}
+
+.infographic_content_header_custom{
+    font-weight: 700;
+    height: 75px;
+    border-bottom: 2px solid #44546a;
+    text-align: center;
+    width: 50%;
+    
+}
+
+.second_underline{
+    border-bottom: 2px solid #0070c0;
+}
+
+.third_underline{
+    border-bottom: 2px solid #18a67e;
+}
+
+.infographic_content_text_custom{
+    margin-top: 25px;
+    text-align: center;
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+@media (max-width: 720px) {
+    .infographic_custom{
+        justify-content: center;
+    }
+    .infographic_content_wrapper_custom{
+        border-radius: 35px;
+    }
+    .infographic_content_header_custom{
+        height: 55px;
+    }
+    .infographic_custom{
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+}

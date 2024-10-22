@@ -1,0 +1,181 @@
+:root{
+    --main-blue-color-custom: #0070c0;
+    --main-sea-color-custom: #3cba94;
+    --main-box-shadow-custom: 1px 3px 15px 5px rgba(0,0,0,0.35);
+    --main-height: 180px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    height: 100% !important;
+}
+body{
+    margin: 25px;
+    height: 100% !important;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #356184;
+    background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+.wrapper_div_custom{
+    display: flex;
+    font-size: clamp(18px, 1.5vw, 25px);
+    flex-direction: column;
+}
+.wrapper_div_custom h3{
+    margin-bottom: 15px;
+}
+.wrapper_div_custom ul{
+    margin-left: 25px;
+    margin-bottom: 0.5vw;
+}
+.wrapper_div_custom ul li{
+    margin-bottom: 0.5vw;
+}
+.wrapper_list_custom{
+    display: flex;
+    align-items: center;
+    height: var(--main-height);
+    width: 100%;
+    margin-bottom: 2vw;
+}
+.img_custom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: clamp(100px, 25vw, var(--main-height));
+    width: clamp(50px, 20vw, 110px);
+    background-color: var(--main-blue-color-custom);
+    border-radius: 5px 0px 0px 5px;
+}
+.wrapper_list_custom:nth-child(even) > div > div{
+    background-color: var(--main-sea-color-custom);
+}
+.img_custom img{
+    width: clamp(35px, 5vw, 50px);
+    height: clamp(35px, 5vw, 50px);
+}
+.number_custom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: clamp(40px, 10vw, 70px);
+    background-color: var(--main-blue-color-custom);
+    border-radius: 0px clamp(25px, 10vw, 60px) 5px 0px;
+    height: clamp(100px, 25vw, var(--main-height));
+    width: clamp(50px, 15vw, 120px);
+    margin-left: -2px;
+}
+.number_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number{
+    margin-bottom: 10px;
+    margin-left: 3vw;
+}
+.text_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0px;
+    margin-left: clamp(-120px, -17vw, -150px);
+    border: 1px solid white;
+    height: 90%;
+    border-radius: clamp(80px, 15vw, 150px);
+    width: inherit;
+    background-color: #0070c000;
+    box-shadow: var(--main-box-shadow-custom);
+    margin-bottom: 2px;
+    transition: all 0.3s ease;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: clamp(110px, 15vw, 135px);
+    padding: 15px;
+    font-size: clamp(12px,2vw,20px);
+    background-color: #49ac8b00 !important;
+}
+.list{
+    margin-left: 35px;
+}
+.text b{
+    margin-bottom: 1vw;
+}
+.list ul li{
+    margin-bottom: 0.5vw;
+    font-size: clamp(10px,1.5vw,18px);
+}
+@media (max-width: 1200px) {
+    .text_wrapper{
+        margin-left: clamp(-120px, -7vw, -150px);
+        border-radius: 50vw 15px 15px 50vw;
+    }
+    .text{
+        margin-left: clamp(110px, 12vw, 135px);
+    }
+}
+@media (max-width: 600px) {
+    .text_wrapper{
+        margin-left: clamp(-120px, -7vw, -150px);
+        border-radius: 50vw 15px 15px 50vw;
+    }
+    .text{
+        margin-left: clamp(110px, 12vw, 135px);
+    }
+}
+@media (max-width: 460px) {
+    .text_wrapper{
+        margin-left: clamp(-115px, -8vw, -120px);
+    }
+    .text{
+        margin-left: clamp(100px, 11vw, 135px);
+    }
+    .number{
+        margin-left: 3vw;
+    }
+}
+@media (max-width: 460px) {
+    .text_wrapper{
+        margin-left: clamp(-120px, -9vw, -140px);
+    }
+    .text{
+        padding: 2px;
+    }
+}
+@media (max-width: 410px) {
+    :root {
+        --main-height: 250px;
+    }
+    .img_custom img {
+        margin-right: 15px;
+    }
+    .text_wrapper{
+        margin-left: clamp(-100px, -5vw, -110px);
+    }
+    .text{
+        margin-left: clamp(94px, 8vw, 135px);
+    }
+    .number{
+        margin-left: 3vw;
+    }
+}
